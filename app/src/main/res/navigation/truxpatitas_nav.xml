@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/truxpatitas_nav"
+    app:startDestination="@id/petsFragment">
+
+    <fragment
+        android:id="@+id/petsFragment"
+        android:name="com.pieroap.truxpatitas.ui.pets.PetsFragment"
+        android:label="fragment_pets"
+        tools:layout="@layout/fragment_pets" />
+    <fragment
+        android:id="@+id/donateFragment"
+        android:name="com.pieroap.truxpatitas.ui.donate.DonateFragment"
+        android:label="fragment_donate"
+        tools:layout="@layout/fragment_donate" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.pieroap.truxpatitas.ui.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+</navigation>
