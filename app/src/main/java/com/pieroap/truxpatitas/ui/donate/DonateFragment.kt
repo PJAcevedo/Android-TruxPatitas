@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.pieroap.truxpatitas.R
 import com.pieroap.truxpatitas.databinding.FragmentDonateBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DonateFragment : Fragment() {
 
     private var _binding: FragmentDonateBinding? = null

@@ -7,7 +7,9 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.pieroap.truxpatitas.R
 import com.pieroap.truxpatitas.databinding.ActivityTrxpnavigationBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class TRXPNavigation : AppCompatActivity() {
 
     private lateinit var binding: ActivityTrxpnavigationBinding

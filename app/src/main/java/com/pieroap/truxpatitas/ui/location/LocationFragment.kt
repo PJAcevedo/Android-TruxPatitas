@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.pieroap.truxpatitas.R
 import com.pieroap.truxpatitas.databinding.FragmentLocationBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LocationFragment : Fragment() {
 
     private var _binding: FragmentLocationBinding? = null
