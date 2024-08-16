@@ -35,6 +35,7 @@ class PetsFragment : Fragment() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 petsViewModel.pets.collect {
+                    petsViewModel.getPets()
                     Log.i("itemsPets", it.toString())
                 }
             }
