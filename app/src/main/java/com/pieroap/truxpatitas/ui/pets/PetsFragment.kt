@@ -50,6 +50,7 @@ class PetsFragment : Fragment() {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 petsViewModel.pets.collect {
                     petsAdapter.updateList(it)
+                    petsViewModel.getPets()
                     Log.i("itemsPets", it.toString())
                 }
             }
